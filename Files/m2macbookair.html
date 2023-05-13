@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M2 Macbook Air | TechZone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header >
+        <div class="container">
+            <div class="nav pronav">
+                <p class="logo"><a href="index.html">Techzone <span style='font-size:20px;'>&#128421;</span></a></p>
+                <nav class="topnav" id="myTopnav">
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">View Product</a></li>
+                        <li><a href="tel:0719297961">0719297961 | Contact us</a></li>
+                        
+                    </ul>
+                </nav>
+                <img src="menu.jpg" alt="" class="icon" onclick="menu()">
+            </div>
+        </div>
+    <section class="body-1">
+    <!-----------------------------------------------------Product details--------------------------------------------------------------->
+    <div class="s-container pad">
+        <div class="row ">
+            <div class="col-2 ">
+                <img src="m2macbookairblack.webp" alt="macbookm2air image" id="product-img" >
+                <div class="small-img-row ">
+                    <div class="small-img-column">
+                        <img src="m2macbookairblack.webp" alt="m2macbookairblack" width="95%"  class="pop">
+                    </div>
+                    <div class="small-img-column">
+                        <img src="m2macbookairgold.webp" alt="m2macbookairgold" width="95%"  class="pop">
+                    </div>
+                    <div class="small-img-column">
+                        <img src="m2macbookairgrey.webp" alt="m2macbookairgrey" width="95%"  class="pop">
+                    </div>
+                    <div class="small-img-column">
+                        <img src="m2macbookairsilver.webp" alt="m2macbookairsilver" width="95%" class="pop">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 product-page">
+                <p>Home / Macbook</p>
+                <h1>MacBook Air M2</h1>
+                <h4>Rs.419,000.00</h4>
+                <select name="" id="">
+                    <option value="" selected>Select color</option>
+                    <option value="">Black</option>
+                    <option value="">Gold</option>
+                    <option value="">Silver</option>
+                    <option value="">Grey</option>
+                </select>
+                <input type="number" value="1">
+                <a href="#" class="btn">Buy Now</a>
+
+                <h3>Product Details <i class="fa fa-cog"></i></h3> <br>
+                <p>On June 6, 2022, at WWDC 2022, Apple announced an updated MacBook Air based on 
+                    the M2 system on a chip. It incorporates several design elements from the 
+                    M1 Pro and M1 Max MacBook Pro models, such as a flat, slab-shaped design, f
+                    ull-sized function keys, and a Liquid Retina 60 Hz display with rounded corners and a
+                    notch for a 1080p webcam. It includes two combination Thunderbolt 3 / USB 4 ports and 
+                    adds MagSafe charging.The M2 MacBook Air was generally well received. Several reviewers
+                    praised the new design, as well as the improved display, performance, and webcam. Dan
+                    Seifert of The Verge described it as "a success on virtually every level". The price
+                    increase over the M1 model was noted, with most concluding that the M1 model was a better value.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-----------------------------------------------------footer--------------------------------------------------------------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-column">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/nalaka.dinesh.140" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-instagram"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="Copyright">Copyright 2023 - Nalaka Dinesh</p>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function () {
+            var productimg = document.getElementById("product-img");
+            var smallimg = document.getElementsByClassName("pop");
+            smallimg[0].onclick = function(){
+                productimg.src =smallimg[0].src;
+            }
+            smallimg[1].onclick = function(){
+                productimg.src =smallimg[1].src;
+            }
+            smallimg[2].onclick = function(){
+                productimg.src =smallimg[2].src;
+            }
+            smallimg[3].onclick = function(){
+                productimg.src =smallimg[3].src;
+            }
+        }
+        MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menu(){
+            if(MenuItems.style.maxHeight == "0px"){
+                MenuItems.style.maxHeight = "200px";
+            }
+            else{
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>

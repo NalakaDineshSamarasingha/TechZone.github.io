@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechZone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header >
+        <div class="container">
+            <div class="nav">
+                <p class="logo"><a href="#">Techzone <span style='font-size:20px;'>&#128421;</span></a></p>
+                <nav class="topnav" id="myTopnav">
+                    <ul id="MenuItems">
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#product">View Product</a></li>
+                        <li><a href="tel:0719297961">0719297961 | Contact us</a></li>
+                        
+                    </ul>
+                </nav>
+                <img src="menu.jpg" alt="" class="icon" onclick="menu()">
+            </div>
+        </div>
+        <div class="body">
+            <div class="row">
+                <div class="col-2">
+                    <h1>Your trusted gadget store</h1>
+                    <p>Grab your laptop ,mobile phone or smart watch <br> with best offers </p>
+                    <a href="product.html" class="btn">Buy now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="laptop.jpg" alt="laptop" width="500px" height="350px">
+                </div>
+            </div>
+            
+        </div>
+    </header>
+    <section class="body-1">
+        <!-----------------------------------------------------Cate--------------------------------------------------------------->
+    
+    <div class="categories">
+        <div class="s-container">
+            <div class="row">
+                <div class="col-3">
+                    <a href="product.html"><img src="cat01.jpg" alt="" width="300px" height="250px"></a>
+                </div>
+                <div class="col-3">
+                    <a href="product.html"><img src="cat02.jpg" alt="" width="300px" height="250px"></a>
+                </div>
+                <div class="col-3">
+                    <a href="product.html"><img src="cat03.jpg" alt="" width="280px" height="250px"></a>
+                </div>
+            </div>
+        </div>     
+    </div>
+    
+    <!-----------------------------------------------------product--------------------------------------------------------------->
+    <div class="main">
+        <div class="s-container">
+            <h2 class="title">New Products</h2>
+            <div class="row">
+                <div class="col-4" >
+                    <a href="Iphone14promax.html"> <img src="14promax.jpg" alt="14 pro" width="200px" ></a>
+                    <a href="Iphone14promax.html"><h4 >Iphone 14 Pro Max</h4></a>
+                    <p>Rs.567,000</p>
+                </div>
+    
+                <div class="col-4">
+                    <a href="iwatchultra.html"><img src="watchultra.jpg" alt="14 pro" width="200px"></a>
+                    <a href="iwatchultra.html"><h4 >Apple Watch Ultra</h4></a>
+                    <p>Rs.310,000</p>
+                </div>
+            </div>
+
+            <h2 class="title" id="product">Products</h2>
+            <div class="row">
+                <div class="col-4">
+                    <a href="Iphone14promax.html"><img src="iphone14promax.webp" alt="14 pro" width="100%"></a>
+                    <a href="Iphone14promax.html"><h4 >Iphone 14 Pro Max</h4></a>
+                    <p>Rs.567,000</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="iphone13promax.jpg" alt="14 pro" width="100%" onclick="iphone13promax()">
+                    <h4 onclick="iphone13promax()">Iphone 13 Pro Max</h4>
+                    <p onclick="iphone13promax()">Rs.420,000</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="iphone11.jpg" alt="14 pro" width="100%" onclick="iphone11()">
+                    <h4 onclick="iphone11()">Iphone 11</h4>
+                    <p onclick="iphone11()">Rs.210,000</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="iphonese3.jpg" alt="14 pro" width="100%" onclick="outofstock()">
+                    <h4 onclick="outofstock()">Iphone SE 2023</h4>
+                    <p onclick="outofstock()">Rs.157,000</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="macbookm1air.webp" alt="14 pro" width="100%" onclick="outofstock()">
+                    <h4 onclick="outofstock()">Macbook Air M1</h4>
+                    <p onclick="outofstock()">Rs.356,000</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="macbookm1pro.webp" alt="14 pro" width="100%" onclick="outofstock()">
+                    <h4 onclick="outofstock()">Macbook Pro M1</h4>
+                    <p onclick="outofstock()">Rs.420,000</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="macbookm2air.webp" alt="14 pro" width="100%" onclick="m2macbookair()">
+                    <h4 onclick="m2macbookair()">Macbook Air M2</h4>
+                    <p onclick="m2macbookair()">Rs.419,000</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="macbookm2pro.webp" alt="14 pro" width="100%" onclick="m2macbookpro()">
+                    <h4 onclick="m2macbookpro()">Macbook Pro M2</h4>
+                    <p onclick="m2macbookpro()">Rs.567,000</p>
+                </div>
+
+            </div>
+            <button class="allbtn" onclick="getpage()">See All</button>
+        </div>
+        
+    </div>
+
+    
+    
+    </section>
+
+    
+    
+    <!-----------------------------------------------------footer--------------------------------------------------------------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-column">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/nalaka.dinesh.140" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-instagram"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="Copyright">Copyright 2023 - Nalaka Dinesh</p>
+        </div>
+    </div>
+
+    <script>
+        MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menu(){
+            if(MenuItems.style.maxHeight == "0px"){
+                MenuItems.style.maxHeight = "200px";
+            }
+            else{
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+        function getpage(){
+            window.open("product.html")
+        }
+        function iphone11(){
+            window.open("iphone11.html")
+        }
+        function iphone13promax(){
+            window.open("iphone13promax.html")
+        }
+        function outofstock(){
+            alert("Sorry! This item is out of stock..")
+        }
+        function m2macbookair(){
+            window.open("m2macbookair.html")
+        }
+        function m2macbookpro(){
+            window.open("m2macbookpro.html")
+        }
+    </script>
+</body>
+</html>

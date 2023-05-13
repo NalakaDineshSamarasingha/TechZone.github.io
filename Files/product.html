@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All product - TechZone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header >
+        <div class="container">
+            <div class="nav">
+                <p class="logo"><a href="index.html">Techzone <span style='font-size:20px;'>&#128421;</span></a></p>
+                <nav class="topnav" id="myTopnav">
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#" class="active">View Product</a></li>
+                        <li><a href="tel:0719297961">0719297961 | Contact us</a></li>
+                        
+                    </ul>
+                </nav>
+                <img src="menu.jpg" alt="" class="icon" onclick="menu()">
+            </div>
+        </div>
+    </header>
+    <section class="body-1">
+
+    <!-----------------------------------------------------product--------------------------------------------------------------->
+    <div class="main-2">
+        <div class="s-container">
+            <div class="row row-9">
+                <h2 class="Products">Products</h2>
+                <select name="catselect" id="cat" onchange="select()">
+                    <option value="all" id="all" selected>All</option>
+                    <option value="iphone" id="iphone">Iphone</option>
+                    <option value="watch" id="watch">Watch</option>
+                    <option value="mac">Macbook</option>
+                </select>
+            </div>
+            <div class="row">
+                <div class="col-4 iphone">
+                    <img src="iphone14promax.webp" alt="14 pro" width="100%" onclick="iphone14()">
+                    <h4 onclick="iphone14()">Iphone 14 Pro Max</h4>
+                    <p onclick="iphone14()">Rs.567,000</p>
+                </div>
+
+                <div class="col-4 iphone">
+                    <img src="iphone13promax.jpg" alt="14 pro" width="100%" onclick="iphone13promax()">
+                    <h4 onclick="iphone13promax()">Iphone 13 Pro Max</h4>
+                    <p onclick="iphone13promax()">Rs.420,000</p>
+                </div>
+
+                <div class="col-4 iphone">
+                    <img src="iphone11.jpg" alt="14 pro" width="100%" onclick="iphone11()">
+                    <h4 onclick="iphone11()">Iphone 11</h4>
+                    <p onclick="iphone11()">Rs.210,000</p>
+                </div>
+
+                <div class="col-4 iphone">
+                    <img src="iphonese3.jpg" alt="14 pro" width="100%" onclick=" outofstock()">
+                    <h4 onclick=" outofstock()">Iphone SE 2023</h4>
+                    <p onclick=" outofstock()">Rs.157,000</p>
+                </div>
+
+                <div class="col-4 mac" >
+                    <img src="macbookm1air.webp" alt="14 pro" width="100%" onclick=" outofstock()">
+                    <h4 onclick=" outofstock()">Macbook Air M1</h4>
+                    <p onclick=" outofstock()">Rs.356,000</p>
+                </div>
+
+                <div class="col-4 mac">
+                    <img src="macbookm1pro.webp" alt="14 pro" width="100%" onclick=" outofstock()">
+                    <h4 onclick=" outofstock()">Macbook Pro M1</h4>
+                    <p onclick=" outofstock()">Rs.420,000</p>
+                </div>
+
+                <div class="col-4 mac">
+                    <img src="macbookm2air.webp" alt="14 pro" width="100%" onclick="m2macbookair()">
+                    <h4 onclick="m2macbookair()">Macbook Air M2</h4>
+                    <p onclick="m2macbookair()">Rs.419,000</p>
+                </div>
+
+                <div class="col-4 mac">
+                    <img src="macbookm2pro.webp" alt="14 pro" width="100%" onclick="m2macbookpro()">
+                    <h4 onclick="m2macbookpro()">Macbook Pro M2</h4>
+                    <p onclick="m2macbookpro()">Rs.567,000</p>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-4 watch">
+                    <img src="watchultrawhite.webp" alt="watch ultra" width="100%" onclick="watchultra()">
+                    <h4 nclick="watchultra()">Apple Watch Ultra</h4>
+                    <p nclick="watchultra()">Rs.310,000</p>
+                </div>
+
+                <div class="col-4 watch">
+                    <img src="AppleWatchSeries7.jpg" alt="AppleWatchSeries7" width="100%" onclick=" outofstock()">
+                    <h4 onclick=" outofstock()">Apple Watch Series 7</h4>
+                    <p onclick=" outofstock()">Rs.144,900</p>
+                </div>
+
+                <div class="col-4 watch">
+                    <img src="AppleWatchSeries7Nike.jpg" alt="AppleWatchSeries7Nike" width="100%" onclick=" outofstock()">
+                    <h4 onclick=" outofstock()">Apple Watch Series 7 Nike</h4>
+                    <p onclick=" outofstock()">Rs.154,900</p>
+                </div>
+
+                <div class="col-4 watch">
+                    <img src="AppleWatchseries8.jpg" alt="Apple Watch series 8" width="100%" onclick=" outofstock()">
+                    <h4 onclick=" outofstock()">Apple Watch series 8</h4>
+                    <p onclick=" outofstock()">Rs.157,900</p>
+                </div>
+
+                
+            </div>
+        </div>
+        
+    </div>
+
+    
+    
+    </section>
+
+    
+    
+    <!-----------------------------------------------------footer--------------------------------------------------------------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-column">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/nalaka.dinesh.140" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-instagram"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="Copyright">Copyright 2023 - Nalaka Dinesh</p>
+        </div>
+    </div>
+
+    <script>
+        function iphone14(){
+            window.open("iphone14promax.html")
+        }
+        function watchultra(){
+            window.open("iwatchultra.html")
+        }
+        function iphone11(){
+            window.open("iphone11.html")
+        }
+        function iphone13promax(){
+            window.open("iphone13promax.html")
+        }
+        function m2macbookair(){
+            window.open("m2macbookair.html")
+        }
+        function m2macbookpro(){
+            window.open("m2macbookpro.html")
+        }
+        function outofstock(){
+            alert("Sorry! This item is out of stock..")
+        }
+        MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menu(){
+            if(MenuItems.style.maxHeight == "0px"){
+                MenuItems.style.maxHeight = "200px";
+            }
+            else{
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+        function select(){
+            var dropdown = document.getElementById("cat");
+            var selectOption = dropdown.options[dropdown.selectedIndex].value;
+            if (selectOption == "iphone") {
+                var element = document.getElementsByClassName("mac");
+                for(var i = 0 ; i < element.length; i++){
+                    element[i].style.display = "none";
+                }
+                var element = document.getElementsByClassName("watch");
+                for(var i = 0 ; i < element.length; i++){
+                    element[i].style.display = "none";
+                }
+                var element = document.getElementsByClassName("iphone");
+                for(var i = 0 ; i < element.length; i++){
+                    element[i].style.display = "block";
+                }
+
+        
+            }else if (selectOption == "watch") {
+                var element = document.getElementsByClassName("iphone");
+                for(var i = 0 ; i < element.length; i++){
+                    element[i].style.display = "none";
+                }
+                var element = document.getElementsByClassName("mac");
+                for(var i = 0 ; i < element.length; i++){
+                    element[i].style.display = "none";
+                }
+                var element = document.getElementsByClassName("watch");
+                for(var i = 0 ; i < element.length; i++){
+                    element[i].style.display = "block";
+                }
+            }else if(selectOption == "mac")  {
+                var element = document.getElementsByClassName("iphone");
+                for(var i = 0 ; i < element.length; i++){
+                    element[i].style.display = "none";
+                }
+                var element = document.getElementsByClassName("watch");
+                for(var i = 0 ; i < element.length; i++){
+                    element[i].style.display = "none";
+                }
+                var element = document.getElementsByClassName("mac");
+                for(var i = 0 ; i < element.length; i++){
+                    element[i].style.display = "block";
+                }
+            }else{
+                var element = document.getElementsByClassName("iphone");
+                for(var i = 0 ; i < element.length; i++){
+                    element[i].style.display = "block";
+                }
+                var element = document.getElementsByClassName("mac");
+                for(var i = 0 ; i < element.length; i++){
+                    element[i].style.display = "block";
+                }
+                var element = document.getElementsByClassName("watch");
+                for(var i = 0 ; i < element.length; i++){
+                    element[i].style.display = "block";
+                }
+            }
+            
+        }
+
+    </script>
+</body>
+</html>

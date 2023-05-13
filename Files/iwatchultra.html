@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Watch Ultra | TechZone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header >
+        <div class="container">
+            <div class="nav pronav">
+                <p class="logo"><a href="index.html">Techzone <span style='font-size:20px;'>&#128421;</span></a></p>
+                <nav class="topnav" id="myTopnav">
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">View Product</a></li>
+                        <li><a href="tel:0719297961">0719297961 | Contact us</a></li>
+                        
+                    </ul>
+                </nav>
+                <img src="menu.jpg" alt="" class="icon" onclick="menu()">
+            </div>
+        </div>
+    <section class="body-1">
+    <!-----------------------------------------------------Product details--------------------------------------------------------------->
+    <div class="s-container pad">
+        <div class="row ">
+            <div class="col-2 ">
+                <img src="watchultra.jpg" alt="watchultra image" id="product-img" >
+                <div class="small-img-row ">
+                    <div class="small-img-column">
+                        <img src="watchultrablack.webp" alt="" width="95%"  class="pop">
+                    </div>
+                    <div class="small-img-column">
+                        <img src="watchultrayellow.webp" alt="" width="95%"  class="pop">
+                    </div>
+                    <div class="small-img-column">
+                        <img src="watchultrawhite.webp" alt="" width="95%"  class="pop">
+                    </div>
+                    <div class="small-img-column">
+                        <img src="watchultraface.webp" alt="" width="95%" class="pop">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 product-page">
+                <p>Home / Watch</p>
+                <h1>Apple Watch Ultra</h1>
+                <h4>Rs.310,000.00</h4>
+                <select name="" id="color" onchange="color()">
+                    <option value="SelectColor" selected>Select color</option>
+                    <option value="Black">Black</option>
+                    <option value="White">White</option>
+                    <option value="Yellow">Yellow</option>
+                </select>
+                <input type="number" value="1">
+                <a href="#" class="btn">Buy Now</a>
+
+                <h3>Product Details <i class="fa fa-cog"></i></h3> <br>
+                <p>Apple Watch is a wearable smartwatch that allows users to 
+                    accomplish a variety of tasks, including making phone calls, s
+                    ending text messages and reading email. <br> Apple Watch Ultra
+                    features apps for scuba and free diving, a redesigned compass, a
+                    robust yet lightweight titanium case, precision dual-frequency
+                    GPS, and up to 36 hours of battery life. <br> The Apple Watch Ultra
+                    has a titanium case with a flat sapphire crystal glass display and
+                    ceramic back cover. That's a recipe for a durable and rugged smartwatch. 
+                    <br> In the box you will find the bare essentials: the Apple Watch Ultra
+                    itself (with its lovely titanium casing), the band you chose to match 
+                    your style (in one of two sizes) and the Apple Watch Magnetic Fast Charger to USB-C Cable.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <img src="aboutwatch.jpg" alt="" width="100%">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <img src="aboutwatch2.jpg" alt="" width="100%">
+            </div>
+        </div>
+    </div>
+
+
+    <!-----------------------------------------------------footer--------------------------------------------------------------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-column">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/nalaka.dinesh.140" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-instagram"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="Copyright">Copyright 2023 - Nalaka Dinesh</p>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function () {
+            var productimg = document.getElementById("product-img");
+            var smallimg = document.getElementsByClassName("pop");
+            smallimg[0].onclick = function(){
+                productimg.src =smallimg[0].src;
+            }
+            smallimg[1].onclick = function(){
+                productimg.src =smallimg[1].src;
+            }
+            smallimg[2].onclick = function(){
+                productimg.src =smallimg[2].src;
+            }
+            smallimg[3].onclick = function(){
+                productimg.src =smallimg[3].src;
+            }
+        }
+        MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menu(){
+            if(MenuItems.style.maxHeight == "0px"){
+                MenuItems.style.maxHeight = "200px";
+            }
+            else{
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+        function color(){
+            var productimg = document.getElementById("product-img");
+            var smallimg = document.getElementsByClassName("pop");
+            var drop =  document.getElementById("color");
+            var select = drop.options[drop.selectedIndex].value;
+            if(select=="Black"){
+                productimg.src =smallimg[0].src;
+            }
+            else if(select=="White"){
+                productimg.src =smallimg[2].src;
+            }
+            else{
+                productimg.src =smallimg[1].src;
+            }
+        }
+    </script>
+</body>
+</html>

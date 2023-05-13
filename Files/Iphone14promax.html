@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iphone 14 Pro Max | TechZone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header >
+        <div class="container">
+            <div class="nav pronav">
+                <p class="logo"><a href="index.html">Techzone <span style='font-size:20px;'>&#128421;</span></a></p>
+                <nav class="topnav" id="myTopnav">
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">View Product</a></li>
+                        <li><a href="tel:0719297961">0719297961 | Contact us</a></li>
+                        
+                    </ul>
+                </nav>
+                <img src="menu.jpg" alt="" class="icon" onclick="menu()">
+            </div>
+        </div>
+    <section class="body-1">
+    <!-----------------------------------------------------Product details--------------------------------------------------------------->
+    <div class="s-container pad">
+        <div class="row ">
+            <div class="col-2 ">
+                <img src="iphone14promax.webp" alt="iphone image" id="product-img" >
+                <div class="small-img-row ">
+                    <div class="small-img-column">
+                        <img src="14promaxblack.webp" alt="" width="95%"  class="pop">
+                    </div>
+                    <div class="small-img-column">
+                        <img src="14promaxgold.webp" alt="" width="95%"  class="pop">
+                    </div>
+                    <div class="small-img-column">
+                        <img src="14promaxwhite.webp" alt="" width="95%"  class="pop">
+                    </div>
+                    <div class="small-img-column">
+                        <img src="iphone14promax.webp" alt="" width="95%" class="pop">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 product-page">
+                <p>Home / Iphones</p>
+                <h1>Apple Iphone 14 pro max</h1>
+                <h4>Rs.567,000.00</h4>
+                <select name="" id="color" onchange="color()">
+                    <option value="selectColor" selected>Select color</option>
+                    <option value="DeepPurple">Deep Purple</option>
+                    <option value="Gold">Gold</option>
+                    <option value="Silver">Silver</option>
+                    <option value="Black">Black</option>
+                </select>
+                <input type="number" value="1">
+                <a href="#" class="btn">Buy Now</a>
+
+                <h3>Product Details <i class="fa fa-cog"></i></h3> <br>
+                <p>Reviews of the iPhone 14 Pro and iPhone 14 Pro Max were positive,
+                    highlighting the major new feature such as an always-on display with a new Dynamic Island, 
+                    upgraded cameras with a 48-megapixel main lens, car crash detection and satellite connectivity
+                    for emergencies, the A16 Bionic chip for faster performance, and new Deep Purple and Space 
+                    Black color options. Emergency SOS via Satellite is not launching until November, so the feature 
+                    was not available for review at the time. <br>  
+                    Exclusive to the iPhone 14 Pro models, the Dynamic Island replaces the traditional notch 
+                    found on all iPhone 13 models. Aided by software, the cutout morphs into different shapes and 
+                    sizes for things such as incoming phone calls, alerts, notifications, Face ID authentication, timers, 
+                    turn-by-turn navigation, Live Activities, and more.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <img src="about14promax.webp" alt="" width="100%">
+            </div>
+            <div class="col-2">
+                <img src="inbox14promax.webp" alt="" width="100%">
+            </div>
+        </div>
+    </div>
+
+
+    <!-----------------------------------------------------footer--------------------------------------------------------------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-column">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/nalaka.dinesh.140" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-instagram"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="Copyright">Copyright 2023 - Nalaka Dinesh</p>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function () {
+            var productimg = document.getElementById("product-img");
+            var smallimg = document.getElementsByClassName("pop");
+            smallimg[0].onclick = function(){
+                productimg.src =smallimg[0].src;
+            }
+            smallimg[1].onclick = function(){
+                productimg.src =smallimg[1].src;
+            }
+            smallimg[2].onclick = function(){
+                productimg.src =smallimg[2].src;
+            }
+            smallimg[3].onclick = function(){
+                productimg.src =smallimg[3].src;
+            }
+        }
+        MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menu(){
+            if(MenuItems.style.maxHeight == "0px"){
+                MenuItems.style.maxHeight = "200px";
+            }
+            else{
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+        function color(){
+            var productimg = document.getElementById("product-img");
+            var smallimg = document.getElementsByClassName("pop");
+            var drop =  document.getElementById("color");
+            var select = drop.options[drop.selectedIndex].value;
+            if(select=="DeepPurple"){
+                productimg.src =smallimg[3].src;
+            }
+            else if(select=="Gold"){
+                productimg.src =smallimg[1].src;
+            }
+            else if(select=="Silver"){
+                productimg.src =smallimg[2].src;
+            }
+            else{
+                productimg.src =smallimg[0].src;
+            }
+        }
+    </script>
+</body>
+</html>
